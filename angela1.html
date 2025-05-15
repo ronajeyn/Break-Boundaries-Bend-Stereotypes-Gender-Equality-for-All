@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Author – Angela Michaela D. Salvador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gradient: linear-gradient(135deg, #fcb6f1, #b4dfff);
+      --font: 'Quicksand', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: var(--gradient);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .profile-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      text-align: center;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .profile-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fcb6f1;
+      margin-bottom: 1rem;
+    }
+
+    .profile-container p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .email {
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #b455b3;
+    }
+
+    .back-section {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #fefefe;
+      border-top: 2px solid #eee;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      background: #fcb6f1;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #b4dfff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f9f9f9;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Angela Michaela D. Salvador</h1>
+  <p>Author Profile</p>
+</header>
+
+<section class="profile-container">
+  <img src="Angela.jpg" alt="Angela Michaela D. Salvador">
+  <p>Angela Michaela D. Salvador is a first-year Computer Engineering student at the University of the Assumption.</p>
+  <p class="email">Keep in touch: <br> amdsalvador.student@ua.edu.ph</p>
+</section>
+
+<section class="back-section">
+    <a class="back-button" href="salvador.html">← Back to the Article</a>
+    <a class="back-button" href="main.html">← Back to Main Page</a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Break Boundaries, Bend Stereotypes: Gender Equality for All. All Rights Reserved.
+</footer>
+
+</body>
+</html>

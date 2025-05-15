@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Break Boundaries, Bend Stereotypes: Gender Equality for All</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(135deg, #fcb6f1, #b4dfff);
+      --font-family: 'Quicksand', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: var(--primary-gradient);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .nav-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .nav-links a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #f2f2f2;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      transition: all 0.4s ease-in-out;
+    }
+
+    #home {
+      background: var(--primary-gradient);
+      color: #fff;
+      text-align: center;
+      padding-top: 6rem;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+    }
+
+    #home p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: #fff;
+      color: #444;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #eaeaea;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      background: #ddd;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #f2f2f2;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .socials img {
+      width: 24px;
+      margin: 0 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 768px) {
+      nav {
+        display: block;
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-links {
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+      }
+
+      .nav-links a {
+        color: #fff;
+        padding: 0 1rem;
+      }
+
+      .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Gender Equality</div>
+  <div class="nav-toggle" onclick="toggleNav()">☰</div>
+  <nav>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#articles">Articles</a>
+      <a href="#campaigns">Campaigns</a>
+      <a href="#authors">Authors</a>
+      <a href="#references">References</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home">
+  <h1>Break Boundaries, Bend Stereotypes:</h1>
+  <h1>Gender Equality for All</h1>
+  <p>"Equality isn’t about making everyone the same — it’s about freeing everyone to be their true selves, beyond stereotypes and limits."</p>
+  <button class="btn" onclick="document.getElementById('about').scrollIntoView()">Explore</button>
+</section>
+
+<!-- Article 1 -->
+<section id="about">
+  <div class="card" style="border: 3px solid; border-image: linear-gradient(135deg, #fcb6f1, #b4dfff) 1;">
+    <p>
+      Gender equality is defined as every individual having the same rights, and opportunities, regardless of gender.
+      It means that both men's and women's needs, interests, and objectives are fairly taken into account,
+      acknowledging the difference among various social groupings. In order to guarantee that no one is disadvantaged
+      or privileged because of their gender, this idea is not just for women; it also applies to males, transgender,
+      and gender nonconforming individuals.
+    </p>
+  </div>
+      .
+  <div class="card" style="border: 3px solid; border-image: linear-gradient(135deg, #fcb6f1, #b4dfff) 1;">
+    <p>
+      Addressing stereotypes, empowering women and both individual and policy actions are all important components
+      of a numerous strategy for promoting gender equality in society. One successful strategy to advance gender
+      equality is to eliminate and alter gender role stereotypes in society and families, support equal distribution
+      of rights, and create conditions that allow both men and women to thrive (UNFPA, 2023).<br><br>
+
+      Education is significant in encouraging gender-sensitive curricula and removing gender stereotypes from
+      educational materials can help have awareness and change in attitudes from a young age (Doherty, 2022).
+      Men must embrace respectful relationships and support efforts for gender equality in order to fulfil their
+      essential role (Martin, 2023). Speaking out against gender-based discrimination can establish a more equal
+      society, promoting inclusive policies, and assisting women-owned enterprises (United Way NCA, 2025).<br><br>
+
+      A long-term change requires tackling systemic problems including child marriage, sexual harassment,
+      and legal constraints that prevent women from participating fully in the economy (Martin, 2023).
+      Helping empower women to reach their full capabilities requires supporting women-led organizations
+      and making sure women have access to leadership opportunities (Global Goals, 2024).
+        </p>
+  </div>
+     .
+  <div class="card" style="border: 3px solid; border-image: linear-gradient(135deg, #fcb6f1, #b4dfff) 1;">
+    <p> 
+      In the 2024 Global Gender Gap Index (GGGI), the Philippines ranked 25th out of 146 countries,
+      with a gender parity score of 77.9% (Dealca, 2025). This indicates that the country has closed nearly 78%
+      of its gender gap. Much of this progress is due to equal access to education, health, and professional
+      opportunities, alongside strong legal protections for women, supported by the Magna Carta of Women (RA 9710)
+      and the recently passed SOGIE Equality Bill (Dealca, 2025; Philippine Commission on Women, 2024; Nicolas, 2024).<br><br>
+
+      In contrast, the Philippines ranked 70th out of 139 countries in the 2024 SDG Gender Index by Equal Measures,
+      with a score of 67.52 out of 100, one of the lowest in the region. Despite achievements in gender parity,
+      the country faces persistent practical issues, such as violence against women and limited access to reproductive
+      health services, which contribute to its lower SDG Gender Index ranking (Abbott & Abbott, 2024).<br><br>
+
+      This contrast highlights that while the Philippines performs well in closing gender gaps,
+      it still struggles with real-world outcomes that affect the daily lives of women and queer individuals.
+      To bridge this gap, collective action is needed through policy enforcement, advocacies, and inclusive
+      community efforts, to ensure that legal equality translates into lived equality for all.
+    </p>
+  </div>
+</section>
+
+<section id="articles">
+  <h2>Articles</h2>
+  <div class="grid">
+    <div class="card"><a href="enriquez.html">The Power of Gender Equality in Building Stronger Societies</a></div>
+    <div class="card"><a href="mayuyu.html">Gender Equality; The Fundamental of Human Rights</a></div>
+    <div class="card"><a href="silvestre.html">Equality Beyond Gender: Embracing Leadership, Emotions, and Opportunities for All</a></div>
+    <div class="card"><a href="yabutj.html">Beyond Stereotypes: Embracing Gender Equality</a></div>
+    <div class="card"><a href="salvador.html">Gender Equality: A Foundation for Real Progress</a></div>
+    <div class="card"><a href="santos.html">Gender Doesn't Define Us</a></div>
+    <div class="card"><a href="yabuta.html">Breaking the Mold</a></div>
+    <div class="card"><a href="zabala.html">Equality is Not a Favor; It is a Right</a></div>
+  </div>
+</section>
+
+<section id="campaigns">
+  <h2>Campaigns</h2>
+  <div class="grid">
+    <div class="card">
+      <a href="c3.html" target="_blank">
+        <img src="c3.JPG" alt="Amnesty International" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: auto; margin-bottom: 0.5rem;">
+        <p><strong>Amnesty International</strong><br></p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="c1.html" target="_blank">
+        <img src="c1.PNG" alt="Babaylanes, Inc." style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: auto; margin-bottom: 0.5rem;">
+        <p><strong>Babaylanes, Inc.</strong><br></p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="c4.html" target="_blank">
+        <img src="c4.PNG" alt="Eleven" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: auto; margin-bottom: 0.5rem;">
+        <p><strong>Eleven</strong><br></p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="c5.html" target="_blank">
+        <img src="c5.PNG" alt="Human Rights Career" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: auto; margin-bottom: 0.5rem;">
+        <p><strong>Human Rights Career</strong><br></p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="c2.html" target="_blank">
+        <img src="c2.jpg" alt="LoveYourself" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: auto; margin-bottom: 0.5rem;">
+        <p><strong>LoveYourself</strong><br></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="authors">
+  <h2>Meet the Authors</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="carl.JPG" alt="Carl Jason D. Enriquez" class="profile-img">
+      <p><a href="carl.html">Carl Jason D. Enriquez</a></p>
+    </div>
+    <div class="card">
+      <img src="Andrei.png" alt="Andrei Ron P. Mayuyu" class="profile-img">
+      <p><a href="andrei.html">Andrei Ron P. Mayuyu</a></p>
+    </div>
+    <div class="card">
+      <img src="Gian.jpeg" alt="Gian Carl R. Silvestre" class="profile-img">
+      <p><a href="gian.html">Gian Carl R. Silvestre</a></p>
+    </div>
+    <div class="card">
+      <img src="Third.jpeg" alt="Jesus I. Yabut III" class="profile-img">
+      <p><a href="jesus.html">Jesus I. Yabut III</a></p>
+    </div>
+    <div class="card">
+      <img src="Angela.jpg" alt="Angela Michaela D. Salvador" class="profile-img">
+      <p><a href="angela.html">Angela Michaela D. Salvador</a></p>
+    </div>
+    <div class="card">
+      <img src="Hershey.jpeg" alt="Hershey S. Santos" class="profile-img">
+      <p><a href="hershey.html">Hershey S. Santos</a></p>
+    </div>
+    <div class="card">
+      <img src="Alex.png" alt="Alexandra S. Yabut" class="profile-img">
+      <p><a href="alex.html">Alexandra S. Yabut</a></p>
+    </div>
+    <div class="card">
+      <img src="Ronna.png" alt="Ronna Jane G. Zabala" class="profile-img">
+      <p><a href="ronna.html">Ronna Jane G. Zabala</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="references">
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://eeca.unfpa.org/en/news/7-ways-you-can-promote-gender-equality-world-rapid-demographic-change" target="_blank">7 Ways to Promote Gender Equality – UNFPA EECA</a></li>
+    <li><a href="https://equalmeasures2030.org/press/philippines-places-70th-in-2024-sdg-gender-index/" target="_blank">Philippines Places 70th in 2024 SDG Gender Index – Equal Measures 2030</a></li>
+    <li><a href="https://www.freiheit.org/philippines/closing-gap-advancing-gender-equality-property-rights-philippines" target="_blank">Closing the Gap: Advancing Gender Equality in Property Rights – Friedrich Naumann Foundation</a></li>
+    <li><a href="https://www.provide-education.co.uk/10-ways-to-promote-gender-equality-in-the-classroom/" target="_blank">10 Ways to Promote Gender Equality in the Classroom – Provide Education</a></li>
+    <li><a href="https://eige.europa.eu/publications-resources/thesaurus/terms/1059?language_content_entity=en" target="_blank">Gender Equality – European Institute for Gender Equality</a></li>
+    <li><a href="https://www.globalgoals.org/goals/5-gender-equality/" target="_blank">Goal 5: Gender Equality – The Global Goals</a></li>
+    <li><a href="https://www.un.org/sustainabledevelopment/gender-equality/" target="_blank">Gender Equality and Women’s Empowerment – United Nations</a></li>
+    <li><a href="https://www.bworldonline.com/labor-and-management/2024/07/02/605802/sogie-equality-bill-passing-will-improve-the-workplace-for-all-advocate/" target="_blank">SOGIE Equality Bill Will Improve the Workplace – BusinessWorld</a></li>
+    <li><a href="https://www.unwomen.org/sites/default/files/2024-09/b30_report_philippines_en.pdf" target="_blank">Progress Report on BPfA+30 – Philippine Commission on Women & UN Women</a></li>
+    <li><a href="https://unitedwaynca.org/blog/what-is-gender-equality/" target="_blank">What Is Gender Equality? – United Way NCA</a></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:uacpe1a@gmail.com">uacpe1a@gmail.com</a></p>
+  <div class="socials">
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Break Boundaries, Bend Stereotypes: Gender Equality for All</p>
+</footer>
+
+<script>
+  function toggleNav() {
+    const nav = document.getElementById("navLinks");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>
